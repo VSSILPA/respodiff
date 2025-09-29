@@ -1,18 +1,19 @@
-# RespoDiff
+# RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation
 
-This repository contains the **official code** for our NeurIPS 2025 paper:  
-**RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation**
+This repository contains the official code for our **NeurIPS 2025** paper:  **RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation**
 
 📄 [Paper Link](https://www.arxiv.org/abs/2509.15257) | 🌐 Project Website (coming soon)
 
 
 ## Overview
 
-RespoDiff introduces a **dual-module bottleneck transformation** for diffusion-based text-to-image (T2I) generation, balancing fairness and safety with faithfulness.  
-The code is adapted from [InterpretDiffusion](https://github.com/hangligit/InterpretDiffusion).
+ We propose RespoDiff, a novel framework for responsible text-to-image generation that incorporates a dual-module transformation on the intermediate bottleneck representations of diffusion models. Our approach introduces two distinct learnable modules: one focused on capturing and enforcing responsible concepts, such as fairness and safety, and the other dedicated to maintaining semantic alignment with neutral prompts. To facilitate the dual learning process, we introduce a novel score-matching objective that enables effective coordination between the modules. Our method outperforms state-of-the-art methods in responsible generation by ensuring semantic alignment while optimizing both objectives without compromising image fidelity.  
+
+![RespoDiff Model Diagram](assets/model.jpg)
 
 
 ## Installation
+The code is adapted from [InterpretDiffusion](https://github.com/hangligit/InterpretDiffusion).
 
 To create the environment from the provided YAML file:
 
