@@ -13,7 +13,6 @@ This repository contains the official code for our **NeurIPS 2025** paper:  **Re
 
 
 ## Installation
-The code is adapted from [InterpretDiffusion](https://github.com/hangligit/InterpretDiffusion).
 
 To create the environment from the provided YAML file:
 
@@ -38,8 +37,7 @@ bash scripts/safe.sh
 
 ## Evaluation
 
-We provide evaluation scripts under the [`scripts/`](scripts/) directory. The evaluation pipeline is adapted from  [Erasing Concepts in Diffusion Models](https://github.com/rohitgandikota/erasing).  
-Each script corresponds to evaluating a specific aspect:
+We provide evaluation scripts under the [`scripts/`](scripts/) directory. Each script corresponds to evaluating a specific aspect such as gender, race and safety:
 
 ```bash
 # Evaluate gender results
@@ -51,6 +49,12 @@ bash scripts/safe_eval.sh
 ```
 Pretrained models for evaluation are available here: [RespoDiff pretrained models](https://drive.google.com/drive/folders/1nE7bz3t78jUyekoXQOEOGAXr04i-6jB8?usp=sharing)
 
+## Acknowledgements
+
+
+
+- This repository builds upon prior open-source implementation in [Self-Discovering Interpretable Diffusion Latent Directions for Responsible Text-to-Image Generation](https://github.com/hangligit/InterpretDiffusion)
+- Evaluation pipeline is adapted from [Erasing Concepts in Diffusion Models](https://github.com/rohitgandikota/erasing)
 
 ## Citation
 
@@ -66,3 +70,8 @@ If you find this work useful, please consider citing:
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2509.15257}, 
 }
+```
+
+## License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
