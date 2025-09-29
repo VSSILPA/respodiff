@@ -28,11 +28,11 @@ We provide training scripts under the [`scripts/`](scripts/) directory.
 Each script corresponds to a different training configuration:
 
 ```bash
-# Train with gender-related constraints
+# Train RespoDiff for gender concepts
 bash scripts/gender.sh
-# Train with race-related constraints
+# Train RespoDiff for race concepts
 bash scripts/race.sh
-# Train with safety-related constraints
+# Train RespoDiff for safety concepts
 bash scripts/safe.sh
 ```
 
@@ -42,11 +42,11 @@ We provide evaluation scripts under the [`scripts/`](scripts/) directory. The ev
 Each script corresponds to evaluating a specific aspect:
 
 ```bash
-# Evaluate gender-related results
+# Evaluate gender results
 bash scripts/gender_eval.sh
-# Evaluate race-related results
+# Evaluate race results
 bash scripts/race_eval.sh
-# Evaluate safety-related results
+# Evaluate safety results
 bash scripts/safe_eval.sh
 ```
 Pretrained models for evaluation are available here: [RespoDiff pretrained models](https://drive.google.com/drive/folders/1nE7bz3t78jUyekoXQOEOGAXr04i-6jB8?usp=sharing)
