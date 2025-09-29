@@ -1,0 +1,28 @@
+import fire
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
+import fsspec
+from metrics.Q16.main.paper_experiments.experiments import run_model_imagefolder
+from argparse import Namespace
+
+
+clip_model_name = 'ViT-L/14'
+prompt_path = f'metrics/Q16/data/{clip_model_name.replace("/", "-")}/prompts.p'
+
+
+def main_imagedataset(input_folder, output_folder):
+    """main function"""
+    args = Namespace(
+        language_model='Clip_'+clip_model_name,
+        model_type='sim',
+        gpu=[0],
+        prompt_path=prompt_path,
+        only_inappropriate=True,
+        input_type='img',
+    )
+    pred_labels = run_model_imagefolder(args, input_folder, output_folder)
+    return pred_labels
+
+
+if __name__ == '__main__':
+    fire.Fire(main_imagedataset)
