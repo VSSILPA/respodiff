@@ -2,8 +2,14 @@
 
 This repository contains the official code for our **NeurIPS 2025** paper:  **RespoDiff: Dual-Module Bottleneck Transformation for Responsible & Faithful T2I Generation**
 
-📄 [Paper Link](https://www.arxiv.org/abs/2509.15257) | [Project Website](https://vssilpa.github.io/respodiff_project_page/)
-
+<p align="center">
+  <a href="https://arxiv.org/abs/2509.15257">
+    <img src="https://img.shields.io/badge/Paper-arXiv%3A2509.15257-B31B1B.svg">
+  </a>
+  <a href="https://vssilpa.github.io/respodiff_project_page/">
+    <img src="https://img.shields.io/badge/Project-Website-1D70B8.svg">
+  </a>
+</p>
 
 ## Overview
 
